@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #fefce8;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.heading h1{
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 25px;
+}
+.timer{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+}
+.timer .time{
+    background: #f3f4f6;
+    margin: 10px;
+    width: 430px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time h1{
+    font-size: 60px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #000000;
+}
+.buttons{
+    margin-top: 35px;
+}
+.buttons button{
+    width: 300px;
+    height: 50px;
+    margin-inline: 65px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    font-weight: normal;
+    font-family: sans-serif;
+}
+.buttons #start{
+    background: #a3e635;
+}
+#start:hover{
+    background: #dcffa2;
+}
+.buttons #pause{
+    background: #fde047;
+}
+#pause:hover{
+    background: #faedad;
+}
+.buttons #reset{
+    background: #f87171;
+    color: #fff;
+}
+#reset:hover{
+    background: hsl(0, 88%, 84%);
+    color: #fff;
+}
+@media(max-width: 1300px){
+    .timer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .timer .time{
+        width: 40rem;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .buttons button{
+        margin: 10px;
+    }
+}
+@media(max-width: 670px){
+    .heading h1{
+        font-size: 35px;
+    }
+    .timer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .timer .time{
+        width: 30rem;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .buttons button{
+        margin: 10px;
+    }
+}
+@media(max-width: 500px){
+    .heading h1{
+        font-size: 30px;
+    }
+    .timer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .timer .time{
+        width: 20rem;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .buttons button{
+        margin: 10px;
+    }
+}
+@media(max-width: 400px){
+    .heading h1{
+        font-size: 25px;
+    }
+    .timer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .timer .time{
+        width: 20rem;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    .buttons button{
+        margin: 10px;
+    }
+}
